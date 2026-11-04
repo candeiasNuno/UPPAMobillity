@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1788279893263" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.oomph.p2" version="1.37.0.v20260830-1513" url="features/org.eclipse.oomph.p2_1.37.0.v20260830-1513/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="4.41.0.v20260819-1952" url="features/org.eclipse.e4.rcp_4.41.0.v20260819-1952/">
+		</feature>
+		<feature id="org.eclipse.oomph.setup.installer" version="1.42.0.v20260831-1248" url="features/org.eclipse.oomph.setup.installer_1.42.0.v20260831-1248/">
+		</feature>
+		<feature id="org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped" version="21.0.12.v20260826-1216" url="features/org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped_21.0.12.v20260826-1216/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.44.0.v20260704-1256" url="features/org.eclipse.emf.ecore_2.44.0.v20260704-1256/">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.39.0.v20260704-1256" url="features/org.eclipse.emf.common_2.39.0.v20260704-1256/">
+		</feature>
+		<feature id="org.eclipse.emf.edit.ui" version="2.30.0.v20260704-1256" url="features/org.eclipse.emf.edit.ui_2.30.0.v20260704-1256/">
+		</feature>
+		<feature id="org.eclipse.emf.common.ui" version="2.27.0.v20260704-1256" url="features/org.eclipse.emf.common.ui_2.27.0.v20260704-1256/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.7.1200.v20260730-1413" url="features/org.eclipse.equinox.p2.core.feature_1.7.1200.v20260730-1413/">
+		</feature>
+		<feature id="org.eclipse.emf.edit" version="2.25.0.v20260704-1256" url="features/org.eclipse.emf.edit_2.25.0.v20260704-1256/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.41.0.v20260828-1142" url="features/org.eclipse.rcp_4.41.0.v20260828-1142/">
+		</feature>
+	</site>
+</config>
