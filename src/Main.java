@@ -1,20 +1,31 @@
-import mobility.Bike;
-import mobility.Station;
-import mobility.User;
+import java.time.LocalDateTime;
+
+import mobility.*;
 
 public class Main {
     public static void main(String[] args){
-        Station stat1 = new Station("stat1", 1);
-        Bike bike1 = new Bike("001");
-        boolean full = stat1.isFull();
-        System.out.println(full);
-        stat1.addBike(bike1);
-        full = stat1.isFull();
-        System.out.println(full);
-        stat1.removeBike(bike1);
-        full = stat1.isFull();
-        System.out.println(full);
-        boolean con = stat1.containsBike(bike1);
-        System.out.println(con);
+        Station campusNord = new Station("Campus Nord", 10);
+        Station bibliotheque = new Station("Bibliotheque", 10);
+
+        User alice = new User("000", "Alice");
+        Bike b104 = new Bike("B-104");
+
+        campusNord.addBike(b104);
+        MobilityService emprunt = new MobilityService();
+        LocalDateTime start = LocalDateTime.of(2026, 10, 12, 9, 0);
+        Rental rent = emprunt.rentBike(alice, b104, campusNord, start);
+
+        boolean estDans = campusNord.containsBike(b104);
+        System.out.println(b104.getId() + " avaible : " + estDans);
+
+        LocalDateTime end = LocalDateTime.of(2026, 10, 12, 11, 30);
+        emprunt.returnBike(alice, b104, bibliotheque, rent, end);
+
+        boolean actifRent = rent.isActive();
+        System.out.println("Rental active : " + actifRent);
+
+        boolean estDans2 = bibliotheque.containsBike(b104);
+         System.out.println(b104.getId() + " now at Bibliotheque : " + estDans2);
+
     }
 }

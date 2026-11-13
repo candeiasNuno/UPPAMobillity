@@ -17,8 +17,8 @@ public class Rental {
 	}
 	
 /* METHODES */	
-	public void finish( LocalDateTime returnTime) {
-		if(this.returnTime.isBefore(this.startTime)) {
+	public void finish() {
+		if(this.returnTime.isAfter(this.startTime)) {
 			System.out.println("Location finish !");
 		} else {
 			throw new IllegalStateException("Return Time < Start Time !");
@@ -28,11 +28,16 @@ public class Rental {
  	public boolean isActive() {
 		return this.returnTime == null;
 	}
+
 	
 /* GETTERS */	
 	public User getUser() { return this.user; }
 	public Bike getBike() { return this.bike; }
 	public LocalDateTime getStartTime() { return this.startTime ; }
 	public LocalDateTime getReturnTime() { return this.returnTime ; }
+/* SETTERS */
+	public void setReturnTime(LocalDateTime returnTime){
+		this.returnTime = returnTime;
+	}
 	
 }

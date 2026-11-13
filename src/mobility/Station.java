@@ -28,7 +28,7 @@ public class Station {
     		throw new IllegalStateException("Station is full");
     	} else {
     		this.bikes.add(bike);
-    		System.out.println("Bike add !");
+    		System.out.println(bike.getId() + " initially at " + this.nom);
     	}
     }
     public void removeBike(Bike bike) {

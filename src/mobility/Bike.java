@@ -13,5 +13,8 @@ public class Bike {
 /* METHODES */
     public String getId(){return this.id;}
     public boolean isAvailable(){return this.available;}
+    public void setAvailable(boolean val){
+        this.available = val;
+    }
 
 }
