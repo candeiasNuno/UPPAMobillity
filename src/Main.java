@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 import mobility.*;
-
+//Salut les amies
 public class Main {
     public static void main(String[] args){
         Station campusNord = new Station("Campus Nord", 10);
