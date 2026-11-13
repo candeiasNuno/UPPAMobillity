@@ -1,5 +1,4 @@
 import java.time.LocalDateTime;
-
 import mobility.*;
 
 public class Main {
